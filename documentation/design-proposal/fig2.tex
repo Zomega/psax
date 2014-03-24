@@ -1,0 +1,39 @@
+\begin{center}
+\begin{tikzpicture}[scale=0.2]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (29.6,-19.9) circle (3);
+\draw (29.6,-19.9) node {$dirty$};
+\draw [black] (52.3,-38.9) circle (3);
+\draw (52.3,-38.9) node {$wait$};
+\draw [black] (29.6,-38.9) circle (3);
+\draw (29.6,-38.9) node {$partial\mbox{ }check$};
+\draw [black] (52.3,-19.9) circle (3);
+\draw (52.3,-19.9) node {$full\mbox{ }check$};
+\draw [black] (52.3,-48.5) circle (3);
+\draw (52.3,-48.5) node {$dir\mbox{ }update$};
+\draw [black] (50,-36.97) -- (31.9,-21.83);
+\fill [black] (31.9,-21.83) -- (32.19,-22.72) -- (32.83,-21.96);
+\draw (44.61,-28.91) node [above] {$inotify$};
+\draw [black] (32.6,-19.9) -- (49.3,-19.9);
+\fill [black] (49.3,-19.9) -- (48.5,-19.4) -- (48.5,-20.4);
+\draw (40.95,-19.4) node [above] {$A\lambda\mbox{ }timeout$};
+\draw [black] (29.6,-22.9) -- (29.6,-35.9);
+\fill [black] (29.6,-35.9) -- (30.1,-35.1) -- (29.1,-35.1);
+\draw (30.1,-29.4) node [right] {$B\lambda\mbox{ }timeout$};
+\draw [black] (55.236,-19.338) arc (92.31166:-92.31166:10.071);
+\fill [black] (55.24,-19.34) -- (56.06,-19.8) -- (56.01,-18.81);
+\draw (66.21,-29.4) node [right] {$C\lambda\mbox{ }timeout$};
+\draw [black] (52.3,-22.9) -- (52.3,-35.9);
+\fill [black] (52.3,-35.9) -- (52.8,-35.1) -- (51.8,-35.1);
+\draw (52.8,-29.4) node [right] {$DONE$};
+\draw [black] (32.6,-38.9) -- (49.3,-38.9);
+\fill [black] (49.3,-38.9) -- (48.5,-38.4) -- (48.5,-39.4);
+\draw (40.95,-39.4) node [below] {$DONE$};
+\draw [black] (50.432,-46.193) arc (-155.37678:-204.62322:5.982);
+\fill [black] (50.43,-46.19) -- (50.55,-45.26) -- (49.64,-45.67);
+\draw (49.39,-43.7) node [left] {$inotify$};
+\draw [black] (54.132,-41.237) arc (23.93305:-23.93305:6.071);
+\fill [black] (54.13,-41.24) -- (54,-42.17) -- (54.91,-41.77);
+\draw (55.15,-43.7) node [right] {$DONE$};
+\end{tikzpicture}
+\end{center}
